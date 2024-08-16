@@ -1,0 +1,13 @@
+syntax = "proto3";
+package cpuprofile;
+
+option go_package = "cpuprofile/proto";
+
+message Example {
+  string example = 1;
+}
+
+
+service ExampleServer {
+  rpc GetExample(Example) returns (Example) {}
+}
